@@ -7,7 +7,6 @@ export const NAV_LINKS = [
   { label: 'Brand Collaboration', href: '/#collaboration', section: 'collaboration' },
   { label: 'Events', href: '/events' },
   { label: 'Blog', href: '/journal' },
-  { label: 'Secret Diners', href: '/secret-diners' },
   { label: 'Consultation', href: '/consultation' },
   { label: 'Contact', href: '/contact' },
 ] as const;
@@ -18,7 +17,6 @@ export const FOOTER_LINKS = [
   { label: 'Brand Collaboration', href: '/#collaboration' },
   { label: 'Events', href: '/events' },
   { label: 'Blog', href: '/journal' },
-  { label: 'Secret Diners', href: '/secret-diners' },
   { label: 'Consultation', href: '/consultation' },
   { label: 'Contact', href: '/contact' },
 ] as const;
@@ -88,15 +86,15 @@ export const SPEAKING = {
 
 export const COLLAB = {
   label: 'SPONSORED CO-SHARED BRAND CONTENT',
-  headline: 'Put your product in the dream.',
+  headline: 'Where the dream already lives.',
   copy: [
-    'Massi makes branded content that doesn’t feel like an ad. Spirits, glassware, ingredients, venues — he weaves your product into a story his followers already trust. One reel, filmed and posted from @thirstydreamer, reaching the exact audience that buys what you make.',
+    'Massi makes branded content that doesn’t feel like an ad. Spirits, glassware, ingredients, venues — he weaves your product into a story his 41.7K already trust. One reel, filmed and posted from @thirstydreamer, reaching the exact audience that buys what you make.',
     'Work closely with Massi creating tailored brand content reflecting your ethos & brand philosophy.',
   ],
   steps: [
     { title: 'You brief the brand', copy: 'Tell Massi the product and the story you want told. A spirit launch, a glassware drop, a venue, an ingredient — anything hospitality-adjacent.' },
     { title: 'Together we work on a tailored Reel', copy: 'Massi concepts, shoots, and edits a short-form video in his own voice — the craft, the pour, the dream. Filmed at Mother or on location.' },
-    { title: 'We post it together for more reach', copy: 'The reel goes live on @thirstydreamer to his engaged followers — plus usage rights so you can run it on your own channels.' },
+    { title: 'We Post It Together for More Reach', copy: 'The reel goes live on @thirstydreamer to 41.7K engaged followers — plus usage rights so you can run it on your own channels.' },
   ],
   exampleLabel: 'PAID PARTNERSHIP · EXAMPLE CARD — NOT A REAL POST',
   fitLabel: 'A fit for brands like',
@@ -127,14 +125,6 @@ export const EVENTS = {
   empty: 'No events announced right now. Check back soon, or reach out to bring Massi into your room.',
 };
 
-export const SECRET = {
-  label: 'BY INVITATION ONLY',
-  headline: 'Secret Diners return soon.',
-  copy: ['Hidden menus. Intimate rooms. Pairings you don’t see coming.', 'Somewhere in this city, a table is being set. You’re not on the list — yet.'],
-  cta: 'Join the waitlist',
-  footnote: 'TORONTO · STRICTLY LIMITED SEATS',
-};
-
 export const CONSULT = {
   label: 'CONSULTATION / CREATIVE DIRECTION',
   copy: 'Hospitality consulting for people building rooms, rituals, products, and experiences with heart.',
@@ -152,7 +142,7 @@ export const CONSULT = {
 export const CONTACT = {
   headline: 'Bring the dream into the room.',
   copy: 'Whether it’s a stage, a launch, a collaboration, a consultation, or a table that doesn’t officially exist — if it’s about hospitality done with heart, Massi wants to hear from you.',
-  tagline: 'Pull up a stool. The dream’s already pouring.',
+  tagline: "Pull up a stool. The dream's already pouring.",
   closing: 'DON’T EVER STOP DREAMING',
 };
 

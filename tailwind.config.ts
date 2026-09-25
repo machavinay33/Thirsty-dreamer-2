@@ -19,6 +19,7 @@ const config: Config = {
         alert: token('alert'),
       },
       fontFamily: {
+        display: ['var(--font-display)', 'Arial Rounded MT Bold', 'Trebuchet MS', 'sans-serif'],
         serif: ['var(--font-serif)', 'Georgia', 'Times New Roman', 'serif'],
         sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
       },

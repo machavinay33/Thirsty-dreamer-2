@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ABOUT, COLLAB, CONSULT, CONTACT, EVENTS, GALLERY, HERO, JOURNAL, MARQUEE_TEXT, MEDIA_SLOTS, SECRET, SPEAKING } from '@/lib/content';
+import { ABOUT, COLLAB, CONSULT, CONTACT, EVENTS, GALLERY, HERO, JOURNAL, MARQUEE_TEXT, MEDIA_SLOTS, SPEAKING } from '@/lib/content';
 import type { EventRow, MediaAsset, Post } from '@/lib/types';
 import { mediaUrl } from '@/lib/utils';
 import { HeroMedia } from './HeroMedia';
@@ -274,31 +274,6 @@ export function EventsSection({ events }: { events: EventRow[] }) {
             <Link href="/contact?type=event" className="btn-primary">{EVENTS.cta} <span aria-hidden="true">→</span></Link>
             <Link href="/events" className="btn-ghost">All events</Link>
           </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-/* ------------------------------ Secret Diners ------------------------------ */
-export function SecretDiners({ asPage = false }: { asPage?: boolean }) {
-  const H = asPage ? 'h1' : 'h2';
-  return (
-    <section id="secret-diners" aria-labelledby="secret-title" className="relative isolate overflow-hidden bg-black py-28 text-center md:py-44">
-      <div className="pointer-events-none absolute inset-0 -z-10" style={{ background: 'radial-gradient(45% 40% at 50% 45%, rgb(var(--copper) / 0.14), transparent 70%)' }} />
-      <div className="wrap flex flex-col items-center">
-        <Reveal>
-          <p className="eyebrow">{SECRET.label}</p>
-          <H id="secret-title" className="display-xl mx-auto mt-8 max-w-5xl !text-[clamp(3rem,10vw,8rem)]">{SECRET.headline}</H>
-        </Reveal>
-        <Reveal delay={100} className="mt-10 grid gap-3 font-serif text-xl italic text-cream/80 md:text-2xl">
-          {SECRET.copy.map((c) => (
-            <p key={c}>{c}</p>
-          ))}
-        </Reveal>
-        <Reveal delay={160} className="mt-12 flex flex-col items-center gap-5">
-          <Link href="/secret-diners#waitlist" className="btn-primary">{SECRET.cta} <span aria-hidden="true">→</span></Link>
-          <p className="text-[0.7rem] font-medium uppercase tracking-label text-cream/60">{SECRET.footnote}</p>
         </Reveal>
       </div>
     </section>

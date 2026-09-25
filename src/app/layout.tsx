@@ -1,11 +1,12 @@
 import type { Metadata, Viewport } from 'next';
-import { DM_Sans, Playfair_Display } from 'next/font/google';
+import { Bowlby_One_SC, DM_Sans, Playfair_Display } from 'next/font/google';
 import { SITE_URL } from '@/lib/env';
 import './globals.css';
 
 // Two families only: a high-contrast editorial serif + a restrained modern sans.
 const serif = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', style: ['normal', 'italic'] });
 const sans = DM_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
+const display = Bowlby_One_SC({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: '400' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -25,7 +26,7 @@ export const viewport: Viewport = { themeColor: '#160f0c', colorScheme: 'dark', 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-CA" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en-CA" className={`${serif.variable} ${sans.variable} ${display.variable}`}>
       <head>
         <noscript>
           <style>{'.reveal{opacity:1!important;transform:none!important}'}</style>

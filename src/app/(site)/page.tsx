@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { JsonLd } from '@/components/public/JsonLd';
-import { About, Collaboration, ConsultationSection, ContactSection, EventsSection, Hero, HomeMarquee, JournalSection, SecretDiners, Speaking, VideoGallery } from '@/components/public/sections';
+import { About, Collaboration, ConsultationSection, ContactSection, EventsSection, Hero, HomeMarquee, JournalSection, Speaking, VideoGallery } from '@/components/public/sections';
 import { getEvents, getMediaBySlot, getPosts } from '@/lib/data';
 import { INSTAGRAM_URL } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
@@ -50,7 +50,6 @@ export default async function HomePage() {
       <Collaboration />
       <VideoGallery media={media} />
       <EventsSection events={events} />
-      <SecretDiners />
       <ConsultationSection />
       <ContactSection />
     </>

@@ -7,14 +7,14 @@
    Tailwind can apply opacity, e.g. bg-espresso/80).
 ------------------------------------------------------------------- */
 :root {
-  --espresso: 22 15 12;   /* primary background */
-  --roast: 32 23 18;      /* raised surface */
-  --walnut: 52 36 26;     /* secondary sections */
-  --tobacco: 88 62 42;    /* secondary sections / borders */
-  --cream: 236 224 200;   /* aged cream: text + large type */
+  --espresso: 35 33 19;   /* deep olive-brown primary background */
+  --roast: 48 39 25;      /* warm raised surface */
+  --walnut: 57 45 29;     /* secondary sections */
+  --tobacco: 100 64 36;   /* secondary sections / borders */
+  --cream: 242 236 218;   /* warm ivory: text + large type */
   --olive: 58 66 36;      /* fermentation / sustainability */
-  --copper: 184 122 84;   /* oxidized copper: rules, highlights, interaction */
-  --vermouth: 160 40 32;  /* CTA accent */
+  --copper: 198 101 52;   /* reference orange: rules, highlights, interaction */
+  --vermouth: 190 91 43;  /* reference orange CTA accent */
   --alert: 240 150 140;   /* readable error text on dark */
   --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
@@ -41,9 +41,9 @@ body::before {
 
 @layer components {
   .eyebrow { @apply font-sans text-[0.7rem] font-medium uppercase tracking-label text-copper; }
-  .display-xl { @apply font-serif text-cream; font-size: clamp(3.4rem, 13vw, 11rem); line-height: 0.88; letter-spacing: -0.035em; font-weight: 500; }
-  .display-lg { @apply font-serif text-cream; font-size: clamp(2.1rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.025em; font-weight: 500; }
-  .display-md { @apply font-serif text-cream; font-size: clamp(1.6rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.015em; font-weight: 500; }
+  .display-xl { @apply font-display text-cream; font-size: clamp(3.4rem, 13vw, 11rem); line-height: 0.88; letter-spacing: -0.035em; font-weight: 400; }
+  .display-lg { @apply font-display text-cream; font-size: clamp(2.1rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.025em; font-weight: 400; }
+  .display-md { @apply font-display text-cream; font-size: clamp(1.6rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.015em; font-weight: 400; }
   .lede { @apply font-sans text-base leading-relaxed text-cream/80 md:text-lg; max-width: 60ch; }
   .rule { @apply border-t border-cream/15; }
   .wrap { @apply mx-auto w-full max-w-7xl px-5 md:px-10; }
