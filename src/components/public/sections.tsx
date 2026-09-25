@@ -64,7 +64,7 @@ export function About({ media }: { media?: MediaAsset }) {
           )}
         </div>
         <blockquote className="relative z-10 -mt-14 ml-4 max-w-md border-l-2 border-copper bg-walnut p-6 md:ml-10">
-          <p className="font-serif text-xl italic leading-snug text-cream md:text-2xl">“{ABOUT.quote}”</p>
+          <p className="font-serif text-xl italic leading-snug text-cream md:text-2xl">{ABOUT.closingQuote}</p>
         </blockquote>
       </Reveal>
 
@@ -77,14 +77,6 @@ export function About({ media }: { media?: MediaAsset }) {
           {ABOUT.body.map((p) => (
             <p key={p}>{p}</p>
           ))}
-        </Reveal>
-        <Reveal delay={120} className="mt-10">
-          <ul className="flex flex-wrap gap-2" aria-label="Roles">
-            {ABOUT.roles.map((r) => (
-              <li key={r} className="badge px-3 py-1.5 text-xs">{r}</li>
-            ))}
-          </ul>
-          <p className="mt-8 font-serif text-3xl italic text-copper">{ABOUT.support}</p>
         </Reveal>
       </div>
     </section>

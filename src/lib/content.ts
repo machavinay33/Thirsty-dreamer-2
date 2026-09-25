@@ -37,17 +37,16 @@ export const HERO = {
 export const MARQUEE_TEXT = ['Never stop dreaming', 'Good things take time', 'Toronto', 'Hospitality', 'Fermentation', 'Sustainability', 'Real drinks, real stories'];
 
 export const ABOUT = {
-  label: 'THE PERSON BEHIND THE POUR',
-  headline: 'Massi doesn’t just make drinks. He builds experiences people remember.',
-  quote: 'We shouldn’t just make drinks, but build rooms, experiences for people to remember.',
+  label: "MASSI'S BIO",
+  headline: "Massi's Bio",
   body: [
-    'Massimo Zitti (AKA Massi) is a bartender, entrepreneur, and storyteller who treats hospitality like a craft and a calling.',
-    'Behind the bar he’s a maker — fermenting, infusing, experimenting — but he thinks like a founder, building rooms and rituals long after last call.',
-    'As a partner at Mother Cocktail Bar, he’s helped shape one of Toronto’s most talked-about cocktail bars, but this new project ThirstyDreamer.com is a larger mission — it’s where his ideas on sustainability, fermentation, and experience design live as one ongoing conversation.',
-    'Part philosopher, part host, part rebel, he believes the best hospitality is honest, rooted, and made by hand — and that a great drink is really just a feeling, handed across the bar.',
+    'My journey in the bar scene began in the heart of Rome, where I balanced childhood dreams and hard work. At just 13, I became captivated by the guitar while assisting his mother at her fish stand. After a brief stint with her, I immersed myself in the bustling bar culture of Via Serpenti at 14, making many cappuccinos every day as barista. This experience instilled discipline and a strong work ethic.',
+    'By 15, I was crafting Aperitivos, laying the foundation for my hospitality philosophy: making guests feel valued. The passion for the craft grew, leading me to United Kingdom at 18, where I faced the realities of living alone and managing my own finances. Through determination, I climbed the ranks in the hospitality industry, eventually becoming a group bar manager in Manchester and a very active competitor in the cocktail scene.',
+    'My relentless pursuit of excellence and innovation led me to open "Mother Cocktail Bar" in Toronto, focusing on fermentation techniques and honest, humble guest service. My dedication culminated in being named the "Canada World Class Bartender of the Year" in 2022 and coaching two Global winners in the same competition in 2023 & 2024.',
+    'My story is one of craftsmanship, resilience, and the unwavering belief that the journey and the company is just as important as the destination.',
+    'In the past 4 years I had the incredible honour to travel many countries sharing the love for the hospitality, cocktail making & fermentation.',
   ],
-  roles: ['Bartender', 'Entrepreneur', 'Storyteller', 'Hospitality Creative', 'Fermentation'],
-  support: 'Good things take time.',
+  closingQuote: '"I TRAIN LIKE I NEVER WON... AND I COMPETE LIKE | NEVER LOST" - Eileen Gu.',
 };
 
 export const JOURNAL = {
