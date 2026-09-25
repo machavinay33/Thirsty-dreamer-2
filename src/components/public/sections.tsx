@@ -22,7 +22,10 @@ export function Hero({ media }: { media?: MediaAsset }) {
       <p className="vertical-label eyebrow absolute right-5 top-1/2 hidden -translate-y-1/2 text-cream/70 md:block md:right-10">Toronto</p>
       <div className="wrap pb-10 pt-32 md:pb-14">
         <p className="eyebrow">{HERO.eyebrow}</p>
-        <h1 id="hero-title" className="display-xl mt-5 max-w-5xl">{HERO.title}</h1>
+        <h1 id="hero-title" className="display-xl mt-5 max-w-5xl">
+          <span className="block text-cream">Never Stop</span>
+          <span className="block text-vermouth">Dreaming.</span>
+        </h1>
         <p className="lede mt-6 max-w-xl">{HERO.body}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/journal" className="btn-primary">{HERO.primary}</Link>

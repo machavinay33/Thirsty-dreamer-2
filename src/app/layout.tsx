@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from 'next';
-import { Bowlby_One_SC, DM_Sans, Playfair_Display } from 'next/font/google';
+import { Cherry_Bomb_One, DM_Sans, Playfair_Display } from 'next/font/google';
 import { SITE_URL } from '@/lib/env';
 import './globals.css';
 
-// Two families only: a high-contrast editorial serif + a restrained modern sans.
+// A hand-drawn display face for the hero, with a restrained sans for body/UI copy.
 const serif = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', display: 'swap', style: ['normal', 'italic'] });
 const sans = DM_Sans({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
-const display = Bowlby_One_SC({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: '400' });
+const display = Cherry_Bomb_One({ subsets: ['latin'], variable: '--font-display', display: 'swap', weight: '400' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', images: ['/og.png'] },
 };
 
-export const viewport: Viewport = { themeColor: '#160f0c', colorScheme: 'dark', width: 'device-width', initialScale: 1 };
+export const viewport: Viewport = { themeColor: '#232113', colorScheme: 'dark', width: 'device-width', initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

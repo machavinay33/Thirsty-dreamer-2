@@ -41,9 +41,9 @@ body::before {
 
 @layer components {
   .eyebrow { @apply font-sans text-[0.7rem] font-medium uppercase tracking-label text-copper; }
-  .display-xl { @apply font-display text-cream; font-size: clamp(3.4rem, 13vw, 11rem); line-height: 0.88; letter-spacing: -0.035em; font-weight: 400; }
-  .display-lg { @apply font-display text-cream; font-size: clamp(2.1rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.025em; font-weight: 400; }
-  .display-md { @apply font-display text-cream; font-size: clamp(1.6rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.015em; font-weight: 400; }
+  .display-xl { @apply font-display text-cream; font-size: clamp(3.4rem, 13vw, 11rem); line-height: 0.9; letter-spacing: -0.02em; font-weight: 400; }
+  .display-lg { @apply font-display text-cream; font-size: clamp(2.1rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.015em; font-weight: 400; }
+  .display-md { @apply font-display text-cream; font-size: clamp(1.6rem, 3.6vw, 2.75rem); line-height: 1.1; letter-spacing: -0.01em; font-weight: 400; }
   .lede { @apply font-sans text-base leading-relaxed text-cream/80 md:text-lg; max-width: 60ch; }
   .rule { @apply border-t border-cream/15; }
   .wrap { @apply mx-auto w-full max-w-7xl px-5 md:px-10; }
