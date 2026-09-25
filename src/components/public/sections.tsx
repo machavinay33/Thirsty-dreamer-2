@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ABOUT, COLLAB, CONSULT, CONTACT, EVENTS, GALLERY, HERO, JOURNAL, MARQUEE_TEXT, MEDIA_SLOTS, SPEAKING } from '@/lib/content';
+import { ABOUT, COLLAB, CONSULT, CONTACT, EDITORIAL_STORIES, EVENTS, GALLERY, HERO, JOURNAL, MARQUEE_TEXT, MEDIA_SLOTS, SPEAKING } from '@/lib/content';
 import type { EventRow, MediaAsset, Post } from '@/lib/types';
 import { mediaUrl } from '@/lib/utils';
 import { HeroMedia } from './HeroMedia';
@@ -79,6 +79,27 @@ export function About({ media }: { media?: MediaAsset }) {
           ))}
         </Reveal>
       </div>
+    </section>
+  );
+}
+
+/* ------------------------------ Editorial stories ------------------------------ */
+export function EditorialStories() {
+  return (
+    <section aria-label="Massi's stories" className="border-y border-cream/10 bg-walnut/30">
+      {EDITORIAL_STORIES.map((story, i) => (
+        <article key={story.label} className="section wrap grid gap-10 border-b border-cream/10 last:border-b-0 lg:grid-cols-12">
+          <Reveal className="lg:col-span-5">
+            <SectionLabel index={String(i + 2).padStart(2, '0')}>{story.label}</SectionLabel>
+            <h2 className="display-lg mt-6">{story.headline}</h2>
+          </Reveal>
+          <Reveal delay={80} className="lg:col-span-6 lg:col-start-7">
+            <div className="grid gap-6 text-base leading-relaxed text-cream/80 md:text-lg">
+              {story.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </div>
+          </Reveal>
+        </article>
+      ))}
     </section>
   );
 }
@@ -313,6 +334,10 @@ export function ContactSection({ asPage = false, defaultType = 'contact' }: { as
           <H id="contact-title" className="display-lg mt-6">{CONTACT.headline}</H>
           <p className="lede mt-6">{CONTACT.copy}</p>
           <p className="mt-6 font-serif text-2xl italic text-copper">{CONTACT.tagline}</p>
+          <div className="mt-8 grid gap-2 text-sm text-cream/80">
+            <a href={`mailto:${CONTACT.email}`} className="transition-colors hover:text-copper">{CONTACT.email}</a>
+            <a href={`tel:${CONTACT.phone.replaceAll('-', '')}`} className="transition-colors hover:text-copper">{CONTACT.phone}</a>
+          </div>
         </Reveal>
         <Reveal delay={90} className="lg:col-span-6 lg:col-start-7">
           <InquiryForm key={defaultType} defaultType={defaultType} />

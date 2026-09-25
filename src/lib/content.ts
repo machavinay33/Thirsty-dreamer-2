@@ -49,6 +49,45 @@ export const ABOUT = {
   closingQuote: '"I TRAIN LIKE I NEVER WON... AND I COMPETE LIKE | NEVER LOST" - Eileen Gu.',
 };
 
+export const EDITORIAL_STORIES = [
+  {
+    label: 'FERMENTATION',
+    headline: 'Fermentation',
+    body: [
+      'Many would say that fermentation is simply a preserving technique developed by our ancestors to aid survival, but I see it as much more. I consider it a lifestyle that deepens your understanding of the creation of food and drinks.',
+      "It's an incredible feeling not just to make but to create something from scratch, with love and care at every single step. Think about bread, koji, or even kombucha; we start with the simplest ingredients, such as grains, rice, or sweet tea, and end up with warm slices, tons of flavor, and bubbles. Does this process not make you shiver or, at the very least, spark your curiosity? Well, it certainly did for me, and I do not regret a single second of this fantastic journey.",
+    ],
+  },
+  {
+    label: 'SECRET DINERS',
+    headline: 'Secret Diners',
+    body: [
+      "Even before I opened Mother Cocktail Bar, I had a professional dream: to collaborate with chefs on food and cocktail pairings. As often happens, things do not go as planned, so I decided to start a side hustle organizing a culinary-event-based experience where food and cocktails could harmonize together.",
+      "What if our guests didn't know the menu until they sat down? I thought that could make everything more challenging, more mysterious, and more unique. Thus, the name SECRET DINERS was born.",
+      'After almost 35 events, we brought the dinner series into restaurants, bars, and art galleries, and I had the luxury of collaborating with so many talented chefs. What started as a joke has become one of the things I am most proud of professionally.',
+    ],
+  },
+  {
+    label: 'SUSTAINABILITY',
+    headline: 'Sustainability',
+    body: [
+      'Certainly, this is a word that has been over-repeated in many shapes and forms, often focusing on re-utilizing instead of prioritizing non-wasting. Each of us has a different approach to this matter; mine is very simple: "If you cannot sustain yourself, it\'s unlikely you will sustain the people around you." Your body, your mind, your surroundings, and especially your time are the most important factors in embracing sustainability and sharing it with others.',
+      'This empowers the message within your own community, with the hope of extending it to other communities, thereby creating a chain of truly sustainable living on our planet Earth.',
+    ],
+  },
+  {
+    label: 'MOTHER COCKTAIL BAR',
+    headline: 'Mother Cocktail Bar',
+    body: [
+      "Co-owned by renowned bartender and bar operator Massimo Zitti (Canada World Class Bartender of the Year 2022, ICCO Best Cocktail Bartender 2023, and official Canada's World Class Coach 2023/2024 — both leading Canada to win the World Title), Mother Cocktail Bar, located on Queen Street West in Toronto, is a top-ranked destination for innovative, fermentation-driven cocktails where hospitality meets sustainability and humble guest service.",
+      "Recognized as No. 7 on Canada's Best 100 (2023) and No. 37 in North America's 50 Best Bars, Mother is acclaimed for its driven culture and avant-garde drink techniques and flavor discovery.",
+      'Mother was born in 2019 from like-minded individuals who believed that the city of Toronto needed something new and different. Over time, this little cocktail hub on Queen Street became one of the industry\'s favorite bars and gained international recognition for bringing a "new wave" of cocktail-making to the city.',
+      'When asked what he is most proud of, Massi (aka Thirsty Dreamer) will genuinely say: "Seeing staff and guests having fun, respecting our duties during service, and observing young talented professionals getting progressively better at their craft."',
+      'Mother Cocktail Bar has the honor of collaborating with other fantastic establishments like Handshake Speakeasy (Mexico City), Overstory (NYC), Odd Couple (Shanghai), Passing Fences (UK), Double Chicken Please, Gokan, Punch Room - Edition Hotel - Tokyo, Nutmeg & Clove and many others..',
+    ],
+  },
+] as const;
+
 export const JOURNAL = {
   label: 'THE ENGINE ROOM',
   headline:
@@ -143,6 +182,8 @@ export const CONTACT = {
   copy: 'Whether it’s a stage, a launch, a collaboration, a consultation, or a table that doesn’t officially exist — if it’s about hospitality done with heart, Massi wants to hear from you.',
   tagline: "Pull up a stool. The dream's already pouring.",
   closing: 'DON’T EVER STOP DREAMING',
+  email: 'massi@motherdrinks.co',
+  phone: '437-985-7677',
 };
 
 export const INQUIRY_TYPES = [
