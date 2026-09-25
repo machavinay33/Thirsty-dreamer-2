@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { FOOTER_LINKS, INSTAGRAM_URL, MOTHER_URL } from '@/lib/content';
 
@@ -7,8 +6,8 @@ export function Footer() {
     <footer className="border-t border-cream/15 bg-roast">
       <div className="wrap grid gap-12 py-16 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <Image src="/logo-cream.png" alt="Thirsty Dreamer" width={1000} height={666} className="h-24 w-auto" />
-          <p className="mt-4 max-w-xs text-sm text-cream/70">Cocktails, fermentation, hospitality, and the hard work of turning dreams into real drinks and real stories.</p>
+          <p className="font-display text-5xl font-semibold leading-[0.85] tracking-[-0.08em] text-cream md:text-7xl">THIRSTY<br />DREAMER<span className="text-olive">.</span></p>
+          <p className="mt-6 max-w-xs font-mono text-xs uppercase leading-relaxed tracking-[0.12em] text-cream/50">Cocktails · fermentation · hospitality · stories<br />Toronto, Canada</p>
         </div>
         <nav aria-label="Footer">
           <p className="eyebrow mb-4">Explore</p>

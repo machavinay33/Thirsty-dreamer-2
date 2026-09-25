@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -63,20 +62,20 @@ export function SiteNav() {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-cream/10 bg-espresso/85 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-cream/10 bg-espresso/90 backdrop-blur-xl">
       <div className="wrap flex h-16 items-center justify-between gap-6 md:h-20">
-        <Link href="/" className="flex items-center" aria-label="Thirsty Dreamer — home">
-          <Image src="/logo-cream.png" alt="Thirsty Dreamer" width={1000} height={666} priority className="h-11 w-auto md:h-14" />
+        <Link href="/" className="group flex items-center gap-2 font-display text-lg font-semibold tracking-[-0.05em] text-cream md:text-xl" aria-label="Thirsty Dreamer — home">
+          THIRSTY DREAMER<span className="text-olive transition-transform group-hover:translate-x-1">.</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden lg:block">
-          <ul className="flex items-center gap-7 text-[0.8rem] tracking-wide">
+          <ul className="flex items-center gap-7 font-mono text-[0.65rem] uppercase tracking-[0.12em]">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
                   aria-current={isActive(l) ? 'page' : undefined}
-                  className={cn('border-b border-transparent pb-1 text-cream/75 transition-colors duration-200 hover:text-cream', isActive(l) && 'border-copper text-cream')}
+                  className={cn('border-b border-transparent pb-1 text-cream/60 transition-colors duration-200 hover:text-olive', isActive(l) && 'border-olive text-cream')}
                 >
                   {l.label}
                 </Link>
@@ -95,6 +94,7 @@ export function SiteNav() {
         >
           {open ? 'Close' : 'Menu'}
         </button>
+        <Link href="/contact" className="hidden border border-olive bg-olive px-4 py-2 font-mono text-[0.62rem] uppercase tracking-[0.12em] text-espresso transition-transform hover:-translate-y-0.5 lg:block">Start a project</Link>
       </div>
 
       <div
