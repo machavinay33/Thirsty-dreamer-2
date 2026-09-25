@@ -20,9 +20,8 @@ const config: Config = {
       },
       fontFamily: {
         display: ['var(--font-display)', 'Arial Rounded MT Bold', 'Trebuchet MS', 'sans-serif'],
-        serif: ['var(--font-display)', 'Arial', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Georgia', 'Times New Roman', 'serif'],
         sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
-        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       letterSpacing: { label: '0.18em' },
     },
